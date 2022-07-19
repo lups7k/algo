@@ -1,6 +1,6 @@
 package algo
 
-func binarySearch(list []int, target int) (result int) {
+func BinarySearch(list []int, target int) (result int) {
 	first := 0
 	last := len(list) - 1
 
