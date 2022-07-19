@@ -1,2 +1,2 @@
 # algo
-Simple algorithms library in GoLang
+Simple algorithms library in Golang
