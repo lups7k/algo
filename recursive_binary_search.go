@@ -1,6 +1,6 @@
 package algo
 
-func recursiveBinarySearch(list []int, target int) (result bool) {
+func RecursiveBinarySearch(list []int, target int) (result bool) {
 	if len(list) == 0 {
 		return false
 	} else {
@@ -10,9 +10,9 @@ func recursiveBinarySearch(list []int, target int) (result bool) {
 			return true
 		} else {
 			if list[mid] < target {
-				return recursiveBinarySearch(list[mid+1:], target)
+				return RecursiveBinarySearch(list[mid+1:], target)
 			} else {
-				return recursiveBinarySearch(list[:mid], target)
+				return RecursiveBinarySearch(list[:mid], target)
 			}
 		}
 	}

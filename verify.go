@@ -4,7 +4,7 @@ import "fmt"
 
 // verify algorithms
 
-func verify(index any) {
+func Verify(index any) {
 	if index != nil {
 		fmt.Println("Target found at index: ", index)
 	} else {
@@ -12,12 +12,12 @@ func verify(index any) {
 	}
 }
 
-func verifySorted(list []int) (result bool) {
+func VerifySorted(list []int) (result bool) {
 	n := len(list)
 
 	if n == 0 || n == 1 {
 		return true
 	}
 
-	return list[0] < list[1] && verifySorted(list[1:])
+	return list[0] < list[1] && VerifySorted(list[1:])
 }

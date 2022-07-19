@@ -1,6 +1,6 @@
 package algo
 
-func mergeSort(list []int) (result []int) {
+func MergeSort(list []int) (result []int) {
 	/*
 	 Sorts a list in ascending order
 	 Returns a new sorted list
@@ -16,15 +16,15 @@ func mergeSort(list []int) (result []int) {
 		return list
 	}
 
-	var leftHalf, rightHalf []int = split(list)
-	var left []int = mergeSort(leftHalf)
-	var right []int = mergeSort(rightHalf)
+	var leftHalf, rightHalf []int = Split(list)
+	var left []int = MergeSort(leftHalf)
+	var right []int = MergeSort(rightHalf)
 
-	mergeReturn := merge(left, right)
+	mergeReturn := Merge(left, right)
 	return mergeReturn
 }
 
-func split(list []int) (resul []int, result []int) {
+func Split(list []int) (resul []int, result []int) {
 	// divide unsorted list at midpoint into sublists
 	// returns two sublists - left and right
 	// overall -> O(k log n)
@@ -36,7 +36,7 @@ func split(list []int) (resul []int, result []int) {
 	return left, right
 }
 
-func merge(left []int, right []int) (result []int) {
+func Merge(left []int, right []int) (result []int) {
 	// Merges two lists, sorting them in the process
 	// Returns a new merged list
 
