@@ -19,11 +19,3 @@ func recursiveBinarySearch(list []int, target int) (result bool) {
 		}
 	}
 }
-
-func verify(index any) {
-	if index != nil {
-		fmt.Println("Target found at index: ", index)
-	} else {
-		fmt.Println("Target not found in list")
-	}
-}
