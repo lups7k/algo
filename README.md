@@ -7,19 +7,19 @@ Simple algorithms library in Golang
 
 ## Functions
 
-`linearSearch()` -> O(n)
+`LinearSearch()` -> O(n)
 
-`binarySearch()` -> O(log n)
+`BinarySearch()` -> O(log n)
 
-`recursiveBinarySearch()` -> O(log n) 
+`RecursiveBinarySearch()` -> O(log n) 
 
 ### Merge Sort algorithms
 
-`mergeSort()` -> O(kn log n) 
+`MergeSort()` -> O(kn log n) 
 
-`split()` -> split arrays, O(k log n)
+`Split()` -> split arrays, O(k log n)
 
-`merge()`
+`Merge()`
 
 ## TODO:
 
