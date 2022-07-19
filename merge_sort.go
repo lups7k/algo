@@ -64,13 +64,3 @@ func merge(left []int, right []int) (result []int) {
 	}
 	return l
 }
-
-func verifySorted(list []int) (result bool) {
-	n := len(list)
-
-	if n == 0 || n == 1 {
-		return true
-	}
-
-	return list[0] < list[1] && verifySorted(list[1:])
-}
