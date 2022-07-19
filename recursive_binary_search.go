@@ -1,7 +1,5 @@
 package algo
 
-import "fmt"
-
 func recursiveBinarySearch(list []int, target int) (result bool) {
 	if len(list) == 0 {
 		return false
